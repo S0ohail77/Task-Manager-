@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Admin Panel</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav class="top-nav">
+    <div class="nav-logo">Task Manager</div>
+    <ul class="nav-menu">
+        <li><a href="index.html">Login</a></li>
+        <li><a href="admin.html">Admin</a></li>
+        <li><a href="user.html">User</a></li>
+        <li><a href="#" onclick="logout()">Logout</a></li>
+    </ul>
+</nav>
+
+<h2>Admin Dashboard</h2>
+
+<div class="section">
+    <h3>Create User</h3>
+    <input type="text" id="newName" placeholder="Full Name">
+    <input type="email" id="newEmail" placeholder="Email">
+    <input type="password" id="newPass" placeholder="Password">
+
+    <button onclick="createUser()">Create User</button>
+</div>
+
+<div class="section">
+    <h3>Assign Task</h3>
+
+    <select id="userList"></select>
+
+    <input type="text" id="taskTitle" placeholder="Task Title">
+    <textarea id="taskDesc" placeholder="Task Description"></textarea>
+
+    <select id="priority">
+        <option>Low</option>
+        <option>Medium</option>
+        <option>High</option>
+    </select>
+
+    <button onclick="assignTask()">Assign Task</button>
+</div>
+
+<button class="logout" onclick="logout()">Logout</button>
+
+<script src="script.js"></script>
+</body>
+</html>

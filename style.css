@@ -1,0 +1,91 @@
+body {
+    background: #0A1D37;
+    color: white;
+    font-family: Arial;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+/* ----------- NAVBAR ----------- */
+.top-nav {
+    width: 100%;
+    background: #081A2A;
+    padding: 12px 22px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+}
+
+.nav-logo {
+    color: cyan;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.nav-menu {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+    margin: 0;
+}
+
+.nav-menu li a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+.nav-menu li a:hover {
+    color: cyan;
+}
+
+/* CONTAINERS */
+.container, .section {
+    background: white;
+    color: #0A1D37;
+    width: 350px;
+    margin: auto;
+    padding: 20px;
+    border-radius: 12px;
+    margin-top: 30px;
+}
+
+input, textarea, select {
+    width: 90%;
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 6px;
+    border: 1px solid #0A1D37;
+}
+
+button {
+    background: cyan;
+    border: none;
+    padding: 10px 20px;
+    margin-top: 15px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.logout {
+    background: red;
+}
+
+.task-box {
+    background: white;
+    color: #0A1D37;
+    padding: 15px;
+    margin: 15px;
+    border-radius: 10px;
+}
+
+.small { 
+    font-size: 12px; 
+    color: lightgray; 
+}
